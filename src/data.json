@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Optimization of Robot Swarms using Hyperparameter Tuning Methods",
+        "body": "A research project, funded courtesy of Moses Biological Computation Lab and Google",
+        "id": 1
+    },
+    {
+        "title": "A Simple Raspberry Pi Image Analyzer",
+        "body": "An experiment in dynamic color extraction using a Paspberry Pi",
+        "id": 2
+    },
+    {
+        "title": "Cellular Automata Evolution with a Genetic Algorithm",
+        "body": "A Java implmementation of a CA evolved to solve a majority rule problem on a 1-d matrix",
+        "id": 3
+    },
+    {
+        "title": "Single Variable Function Interpolators",
+        "body": "A variety of function interpolators implemented in Python 3",
+        "id": 4
+    },
+    {
+        "title": "Twitter-Scope",
+        "body": "A fun project using live twitter data as input to a generative visual display",
+        "id": 5
+    }
+]

@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import data from './data.json'
+import './App.scss'
+import Header from './components/header/Header'
 
-function App() {
+import Footer from './components/footer/Footer.js';
+
+function Post({ title, body, id}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="post">
+      <h4>{title}</h4> - {body}
     </div>
   );
 }
 
-export default App;
+function App () {
+  return(
+    <div className="container"> 
+      <Header name="DBau" tagline="// projects, research and assorted snippets"/>
+      <div className="posts">
+        {data.map((datum, i) => (
+          <Post key={i} {...datum}/>
+        ))}
+      </div>
+      <Footer name="David G Bau" tagline="c'est la vie"/>
+    </div>
+  )
+  
+
+}
+
+export default App
