@@ -4,7 +4,7 @@ import './Header.scss'
 
 function Header(props) {
     const [cursor, setCursor] = useState('_');
-
+// 25AF
     const flipCursor = () => {
         if (cursor === '_') setCursor('');
         else setCursor('_');
@@ -18,12 +18,12 @@ function Header(props) {
     });
 
     return (
-        <div className="header">
+        <div className="site-header">
             <div>
-                <h2>{props.name}~${cursor}</h2>
+                <h4>{props.name}~${cursor}</h4>
             </div>
             <div id="tagline">
-                <code>{props.tagline}</code>
+                <p>{props.tagline}</p>
             </div>
         </div>
     )
